@@ -1,6 +1,10 @@
 import mongoose from 'mongoose'
 
 const userSchema = new mongoose.Schema({
+  avatar_url: {
+    type: String,
+    required: true,
+  },
   name: {
     type: String,
     required: true,
@@ -17,6 +21,7 @@ const userSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
+
 })
 
 export const UserModel = mongoose.model('User', userSchema)

@@ -42,6 +42,7 @@ export const getUser = async (req: Request, res: Response) => {
       login: response.login,
       followers: response.followers,
       publicRepos: response.public_repos,
+      avatar_url: response.avatar_url
     })
 
     // Guarda el documento en la base de datos (pushea a la bd)
