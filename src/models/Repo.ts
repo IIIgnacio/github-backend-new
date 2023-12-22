@@ -12,4 +12,4 @@ const repoSchema = new mongoose.Schema({
     date: String,
   });
 
-const Repo = mongoose.model('Repo', repoSchema)
+export const RepoModel = mongoose.model('Repo', repoSchema)

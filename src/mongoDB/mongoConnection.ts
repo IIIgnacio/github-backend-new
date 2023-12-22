@@ -1,4 +1,3 @@
-import { MongoClient, ServerApiVersion } from 'mongodb'
 import * as dotenv from 'dotenv'
 import mongoose from 'mongoose'
 

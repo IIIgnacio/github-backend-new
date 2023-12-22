@@ -3,8 +3,11 @@ import axios from 'axios';
 
 export const getAllRepositories = async (req: Request, res: Response) => {
   try {
-    const response = await axios.get('https://api.github.com/repositories');
+    
+    const name = await req.params.name
 
+    const response = await axios.get(`https://api.github.com/search/repositories?q=${name}`);
+    
     const repositories = response.data;
 
     res.json({

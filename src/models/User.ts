@@ -5,12 +5,18 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
       },
-    public_repos: {
+      login: {
         type: String,
+        required: true,
+      },
+      followers: {
+        type: Number,
+        required: true,
+      },
+      public_repos: {
+        type: Number,
         required: true,
       },
 });
 
-const User = mongoose.model("User", userSchema )
-
-export { User, userSchema };
+export const UserModel = mongoose.model("User", userSchema )
