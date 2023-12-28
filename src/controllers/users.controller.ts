@@ -35,6 +35,8 @@ export const getUser = async (req: Request, res: Response) => {
       .get(`https://api.github.com/users/${username}`)
       .then((res) => res.data)
 
+      console.log(response);
+      
     // Crea un modelo de usuario con la informacion que queremos guardar en el documento
     // de la base de datos
     const user = new UserModel({
@@ -42,7 +44,8 @@ export const getUser = async (req: Request, res: Response) => {
       login: response.login,
       followers: response.followers,
       publicRepos: response.public_repos,
-      avatar_url: response.avatar_url
+      avatar_url: response.avatar_url,
+      url: response.html_url
     })
 
     // Guarda el documento en la base de datos (pushea a la bd)
