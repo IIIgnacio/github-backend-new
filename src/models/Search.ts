@@ -12,4 +12,4 @@ const searchSchema = new mongoose.Schema({
   date: String,
 });
 
-export const Search = mongoose.model('Search', searchSchema);
+export const SearchModel = mongoose.model('Search', searchSchema);
