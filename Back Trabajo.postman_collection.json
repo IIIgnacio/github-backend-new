@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "97904539-c411-46cf-9dd3-72d46b66b4c1",
+		"name": "Back Trabajo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17445499"
+	},
+	"item": [
+		{
+			"name": "User Crud",
+			"item": [
+				{
+					"name": "Get Users",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/user",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/user/IIIgnacio",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"user",
+								"IIIgnacio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/user",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/user/IIIgnacio",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"user",
+								"IIIgnacio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/user/IIIgnacio",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"user",
+								"IIIgnacio"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Repo Crud",
+			"item": [
+				{
+					"name": "Get Repos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/repos/pomodoro",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"repos",
+								"pomodoro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Repo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"name\":  \"Pomodoro\"\r\n}"
+						},
+						"url": {
+							"raw": "{{API_URL}}/repos",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"repos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Repo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/repo/IIIgnacio",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"repo",
+								"IIIgnacio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Uptdate Repo",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}/repo/IIIgnacio",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"repo",
+								"IIIgnacio"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
